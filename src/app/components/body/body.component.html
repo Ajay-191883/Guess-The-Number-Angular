@@ -1,0 +1,24 @@
+<main>
+  <section class="left">
+    <input
+      #numberInput
+      type="number"
+      class="guess"
+      max="30"
+      min="1"
+      [disabled]="gameEnd"
+    />
+    <button class="btn check" (click)="checkInputNumber()" [disabled]="gameEnd">
+      Check!
+    </button>
+  </section>
+  <section class="right">
+    <p class="message">{{ gameMessage }}</p>
+    <p class="label-score">
+      💯 Score: <span class="score">{{ yourScore }}</span>
+    </p>
+    <p class="label-highscore">
+      🥇 Highscore: <span class="highscore">{{ gameHighscore }}</span>
+    </p>
+  </section>
+</main>

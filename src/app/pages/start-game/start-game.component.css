@@ -1,0 +1,24 @@
+.object {
+  animation: MoveUpDown 1.5s linear infinite;
+  position: absolute;
+  left: 40%;
+  bottom: 60%;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 55%;
+  }
+  50% {
+    bottom: 60%;
+  }
+}
+
+.object:hover {
+  background-color: tomato;
+  transition: all 500ms ease;
+}
